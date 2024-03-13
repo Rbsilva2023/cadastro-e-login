@@ -1,0 +1,43 @@
+@import '../../styles/_variables.scss';
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    color: $Grey-O;
+    font-weight: 400;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    color: $Grey-O;
+    background: $Grey-2;
+    border-radius: 4px;
+    width: 329px;
+    max-width: 100%;
+    height: 48px;
+    padding: 10px;
+  }
+  input:focus {
+    border: 1px solid $Grey-O;
+  }
+}
+
+.erro {
+  color: $Negative;
+  font-weight: 400;
+  font-size: 12px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

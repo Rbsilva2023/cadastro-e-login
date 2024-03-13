@@ -1,0 +1,102 @@
+@import '../../styles/variables';
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 50px;
+  flex-direction: column;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  .logo {
+    color: $Color-primary;
+    font-size: 30px;
+  }
+
+  .form {
+    width: 369px;
+    height: 502px;
+    max-width: 100%;
+    background: $Grey-3;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    .container_title {
+      margin: 0 auto;
+    }
+    .title {
+      text-align: center;
+      color: $Grey-O;
+    }
+    .submit {
+      background: $Color-primary;
+      color: $Grey-O;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $Color-primary-Focus;
+      }
+    }
+  }
+  .cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    p {
+      color: $Grey-1;
+      font-weight: 300;
+    }
+    .register {
+      background: $Grey-1;
+      color: $Grey-1;
+      a {
+        cursor: pointer;
+        width: 100%;
+        padding: 10px;
+        display: block;
+      }
+      &:hover {
+        background: $Grey-2;
+      }
+    }
+  }
+}
+
+.register,
+.submit {
+  outline: none;
+  border: none;
+
+  text-align: center;
+  padding: 5px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.erro {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

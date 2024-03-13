@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.containerError {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 100vh;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+
+  .logoAndErrorMsg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    .logo {
+      font-size: 40px;
+      color: $Color-primary;
+    }
+    .titleError {
+      color: $Grey-O;
+      font-size: 25px;
+    }
+    .btn_back {
+      border: none;
+      outline: none;
+      background: $Grey-3;
+      padding: 10px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+  }
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

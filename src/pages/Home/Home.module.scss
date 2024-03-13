@@ -1,0 +1,138 @@
+@import '../../styles/variables';
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  margin: 0 auto;
+  border-bottom: 1px solid $Grey-2;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  .containerLogo_Logout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+
+    .logo {
+      font-size: 30px;
+      color: $Color-primary;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .logout {
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      width: 55px;
+      height: 32px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: $Grey-O;
+      background: $Grey-3;
+      transition: 0.3s;
+      font-size: 13px;
+      &:hover {
+        background: $Grey-2;
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 118px;
+    width: 100%;
+  }
+  .section2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .container_name_module,
+  .container_content_notfound {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+
+    .welcome,
+    .contentNotFound {
+      color: $Grey-O;
+    }
+    .module,
+    h3 {
+      color: $Grey-1;
+    }
+  }
+  .container_content_notfound {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    .h3 {
+      font-weight: 400;
+    }
+  }
+}
+.borda {
+  width: 100%;
+  height: 1px;
+  background: $Grey-2;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section,
+  .section2 {
+    padding: 20px;
+    height: 100% !important;
+  }
+  .containerLogo_Logout {
+    padding: 20px;
+  }
+  .container_name_module {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+  .welcome,
+  .contentNotFound {
+    font-size: 20px;
+  }
+  .module,
+  .h3 {
+    font-size: 15px;
+  }
+}
